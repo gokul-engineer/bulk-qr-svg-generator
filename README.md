@@ -103,4 +103,3 @@ Access the QR Code Generator here:
 👉 [Open App](https://bulk-qr-svg-generator-bedmin4gprwqtouujoyxkk.streamlit.app/)
 
 
-Let me know if you want this content auto-added into your `README.md` file now — I can give you the full updated file in one go!
