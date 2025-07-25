@@ -8,6 +8,13 @@ import io
 st.set_page_config(page_title="Bulk QR Code Generator (SVG)", layout="centered")
 st.title("🎯 Bulk QR Code Generator")
 
+# 🔍 Sample Input Format - shown upfront
+with st.expander("🧾 Sample Excel Format"):
+    st.dataframe(pd.DataFrame({
+        "Name": ["Google", "YouTube"],
+        "URL": ["https://www.google.com", "https://youtube.com"]
+    }))
+
 uploaded_file = st.file_uploader("📄 Upload Excel File", type=["xlsx"])
 
 if uploaded_file:
@@ -63,8 +70,18 @@ if uploaded_file:
                 mime="application/zip"
             )
 
-        with st.expander("🔍 Sample Format"):
-            st.dataframe(pd.DataFrame({
-                "Name": ["Google", "YouTube"],
-                "URL": ["https://www.google.com", "https://youtube.com"]
-            }))
+# 🔗 GitHub links with icon badges
+st.markdown("---")
+st.markdown(
+    """
+    <div style='text-align: center;'>
+        <a href="https://github.com/gokul-engineer/bulk-qr-svg-generator-Automation" target="_blank">
+            <img src="https://img.shields.io/badge/🔗%20Project%20Repo-Visit-blue?style=for-the-badge" alt="Project Repo">
+        </a>
+        <a href="https://github.com/gokul-engineer" target="_blank">
+            <img src="https://img.shields.io/badge/👨‍💻%20My%20GitHub%20Profile-gokul--engineer-black?style=for-the-badge" alt="GitHub Profile">
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
