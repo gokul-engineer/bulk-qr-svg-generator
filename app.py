@@ -11,8 +11,8 @@ st.title("🎯 Bulk QR Code Generator")
 # 🔍 Sample Input Format - shown upfront
 with st.expander("🧾 Sample Excel Format"):
     st.dataframe(pd.DataFrame({
-        "Name": ["Google", "YouTube"],
-        "URL": ["https://www.google.com", "https://youtube.com"]
+        "URL": ["https://www.google.com", "https://youtube.com"],
+        "Name": ["Google", "YouTube"]
     }))
 
 uploaded_file = st.file_uploader("📄 Upload Excel File", type=["xlsx"])
