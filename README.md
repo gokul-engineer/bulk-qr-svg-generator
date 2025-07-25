@@ -1,29 +1,47 @@
-## 📌 Why I Built This – Real Use Case
+# Bulk QR SVG Generator 🧾➡️📦
 
-In 2022, I joined a company called **Global Fair Impex India**, which exports building materials (including kitchen and vanity cabinets) from India, Southeast Asia, and China to the USA.
-
-These cabinets were shipped in **flat packs**, and each style required an instruction folder stored on **Google Drive**. To make it customer-friendly, each cabinet box was labeled with a **QR code** that, when scanned, opened the cabinet’s instruction folder.
-
-### 🚨 The Problem
-
-For every cabinet:
-- A new Google Drive folder had to be **manually created**
-- Its **shareable link** copied one by one
-- The link was then **converted into a QR code** using an online tool
-- Each QR image had to be **downloaded and renamed manually**
-
-This was **repetitive and time-consuming**, especially when dealing with **hundreds of cabinets** per project.
+Generate multiple QR codes in bulk from a list of URLs and names — save them as high-quality SVG images in a zip file. Perfect for tagging physical items with digital content access.
 
 ---
 
-## 🛠️ What I Automated
+## 🚀 Why I Built This
 
-I built:
-- A **Google Apps Script** to automatically create folders and generate shareable links
-- A **Python script** to bulk-create and export QR codes from those links
-- And finally, this **Streamlit app** for easy QR image generation in bulk
+Back in 2022, I joined **Global Fair Impex India**, a building materials export company delivering products to the US from India, Southeast Asia, and China.
 
-This cut down the manual process from **hours to just minutes** — increasing productivity and minimizing human errors.
+One of our major products was **flat-packed kitchen and vanity cabinets**. Each cabinet style came with a dedicated **Google Drive folder** containing documents like installation guides, component info, and warranty PDFs.
+
+To give customers access, each cabinet needed a **QR code** printed and stuck on the product — when scanned, it opened the respective folder.
+
+> ⚠️ The Problem:  
+> Our backend team manually created folders, copied links, and used third-party tools like QR Monkey to generate QR codes **one by one** for **hundreds of cabinets per project**.
+
+That was a massive time sink and error-prone.
+
+---
+
+## 💡 My Solution
+
+I automated the entire process using:
+
+- **Google Apps Script** to create Drive folders and extract shareable links  
+- **This Python + Streamlit tool** to **bulk-generate QR codes from those links**
+
+Each QR code is saved as a clean `.svg` image for professional-quality printing.
+
+---
+
+## 📦 Typical Use Case
+
+A single export project involved:
+
+- 📁 ~300 cabinet styles or SKUs  
+- ⏱️ Manual QR generation took ~10–15 seconds per code  
+- 🕓 That’s over **1 hour of repetitive work** per project!
+
+With this tool:  
+✅ Generate 300 QR codes in **under 30 seconds**
+
+
 
 ---
 
