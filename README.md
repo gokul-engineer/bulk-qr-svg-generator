@@ -1,4 +1,4 @@
-# Bulk QR SVG Generator 🧾➡️📦
+# Bulk QR SVG Generator Automation 🧾➡️📦
 
 Generate multiple QR codes in bulk from a list of URLs and names — save them as high-quality SVG images in a zip file. Perfect for tagging physical items with digital content access.
 
