@@ -1,42 +1,81 @@
-# Bulk QR Code Generator (Streamlit App)
+## 📌 Why I Built This – Real Use Case
 
-🎯 This app allows users to upload an Excel file with **URLs and Names**, and automatically generates QR code images for each entry. All QR codes are downloaded as a compressed ZIP file.
+In 2022, I joined a company called **Global Fair Impex India**, which exports building materials (including kitchen and vanity cabinets) from India, Southeast Asia, and China to the USA.
 
----
+These cabinets were shipped in **flat packs**, and each style required an instruction folder stored on **Google Drive**. To make it customer-friendly, each cabinet box was labeled with a **QR code** that, when scanned, opened the cabinet’s instruction folder.
 
-## 📂 Input Format
+### 🚨 The Problem
 
-Upload an Excel file (`.xlsx`) with two columns:
+For every cabinet:
+- A new Google Drive folder had to be **manually created**
+- Its **shareable link** copied one by one
+- The link was then **converted into a QR code** using an online tool
+- Each QR image had to be **downloaded and renamed manually**
 
-| URL                           | Name      |
-|------------------------------|-----------|
-| https://www.google.com       | Google    |
-| https://www.openai.com       | OpenAI    |
-
----
-
-## ⚙️ How It Works
-
-1. Upload your Excel file from the local system.
-2. QR codes are generated for each row using the **URL**.
-3. Each QR image is saved with the corresponding **Name**.
-4. All QR images are zipped and made available for download.
+This was **repetitive and time-consuming**, especially when dealing with **hundreds of cabinets** per project.
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ What I Automated
 
-- Python 🐍
-- Streamlit
-- pandas
-- qrcode
-- PIL
-- zipfile
+I built:
+- A **Google Apps Script** to automatically create folders and generate shareable links
+- A **Python script** to bulk-create and export QR codes from those links
+- And finally, this **Streamlit app** for easy QR image generation in bulk
+
+This cut down the manual process from **hours to just minutes** — increasing productivity and minimizing human errors.
 
 ---
 
-## ▶️ Run Locally
+## 🚀 How to Use This App
 
-```bash
-pip install -r requirements.txt
-streamlit run app.py
+You can use this app to **generate QR codes in bulk** from a list of URLs and names.
+
+### 📂 Step 1: Prepare Excel File
+
+Your Excel sheet should contain two columns:
+
+| URL                           | Name        |
+|------------------------------|-------------|
+| https://drive.google...      | BaseCab-01  |
+| https://drive.google...      | SinkCab-02  |
+| ...                          | ...         |
+
+Make sure:
+- Column A has the **Google Drive or any valid link**
+- Column B has the **name** you want for the QR code image
+
+---
+
+### ⬆️ Step 2: Upload the Excel File
+
+In the Streamlit app:
+- Click **"Browse files"** to upload your Excel file
+
+---
+
+### 🎯 Step 3: Generate and Download
+
+- Click **"Generate QR Codes"**
+- It will create QR codes in **SVG format** with the given names
+- A **ZIP file** will be generated for download
+
+---
+
+## 📎 Example Use Cases
+
+- Google Drive folder access via QR
+- Event ticket URLs
+- Product manuals
+- Logistics & warehouse labeling
+- Inventory systems
+
+---
+
+## 📢 Try the App
+
+👉 [Click here to use the app on Streamlit Cloud](https://bulk-qr-svg-generator.streamlit.app)
+
+---
+
+Let me know if you want this content auto-added into your `README.md` file now — I can give you the full updated file in one go!
