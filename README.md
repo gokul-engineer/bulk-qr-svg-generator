@@ -2,6 +2,12 @@
 
 Generate multiple QR codes in bulk from a list of URLs and names — save them as high-quality SVG images in a zip file. Perfect for tagging physical items with digital content access.
 
+### 🔗 Live App
+Access the QR Code Generator here:  
+👉 [Open App](https://bulk-qr-svg-generator-bedmin4gprwqtouujoyxkk.streamlit.app/)
+
+How to use? read below
+
 ---
 
 ## 🚀 Why I Built This
@@ -92,8 +98,9 @@ In the Streamlit app:
 
 ## 📢 Try the App
 
-👉 [Click here to use the app on Streamlit Cloud](https://bulk-qr-svg-generator.streamlit.app)
+### 🔗 Live App
+Access the QR Code Generator here:  
+👉 [Open App](https://bulk-qr-svg-generator-bedmin4gprwqtouujoyxkk.streamlit.app/)
 
----
 
 Let me know if you want this content auto-added into your `README.md` file now — I can give you the full updated file in one go!
